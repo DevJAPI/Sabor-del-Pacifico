@@ -6,7 +6,21 @@
 @source "../../node_modules/preline/dist/*.js";
 
 @theme {
-    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-        "Noto Color Emoji";
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+    
+    --color-primary-50: #f4f7f6;
+    --color-primary-100: #e2ebe9;
+    --color-primary-200: #c5d7d3;
+    --color-primary-300: #9cbdb5;
+    --color-primary-400: #719e94;
+    --color-primary-500: #528378;
+    --color-primary-600: #40685f;
+    --color-primary-700: #35544d;
+    --color-primary-800: #2d4540;
+    --color-primary-900: #273935;
+    --color-primary-950: #15211f; 
+
+    --color-accent-400: #d4af37;
+    --color-accent-500: #c19b2e;
 }
