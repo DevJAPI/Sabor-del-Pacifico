@@ -2,7 +2,7 @@
     <!-- Hero Section -->
     <div class="relative bg-primary-900 h-[85vh] min-h-[600px] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="https://picsum.photos/seed/hotel0/800/600" class="w-full h-full object-cover opacity-60 scale-105 transform motion-safe:animate-pulse" style="animation-duration: 20s;" alt="Hotel Restaurant Ambient">
+            <img src="{{ asset('img/hero.png') }}" class="w-full h-full object-cover opacity-60 scale-105 transform motion-safe:animate-pulse" style="animation-duration: 20s;" alt="Hotel Restaurant Ambient">
             <div class="absolute inset-0 bg-gradient-to-b from-primary-950/40 via-primary-950/20 to-primary-950/80"></div>
         </div>
 
@@ -32,7 +32,7 @@
     <div class="max-w-[85rem] px-4 py-16 sm:px-6 lg:px-8 lg:py-24 mx-auto">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div class="relative" x-data="{ appear: false }" x-intersect.once="appear = true">
-                <img class="rounded-xl w-full h-[600px] object-cover shadow-2xl transition-all duration-1000 transform" :class="appear ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'" src="https://picsum.photos/seed/seafood0/800/600" alt="Chef plating food">
+                <img class="rounded-xl w-full h-[600px] object-cover shadow-2xl transition-all duration-1000 transform" :class="appear ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'" src="{{ asset('img/mariscos.png') }}" alt="Chef plating food">
                 <div class="absolute -bottom-8 -right-8 bg-white p-6 rounded-xl shadow-xl hidden md:block max-w-xs transition-all duration-1000 delay-300 transform" :class="appear ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'">
                     <p class="font-serif text-xl italic text-primary-900">"Nuestra cocina es un poema dedicado al océano."</p>
                 </div>
@@ -75,7 +75,7 @@
             <!-- Salón -->
             <div class="text-center group transition-all duration-700 delay-100 transform" :class="appear ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'">
                 <div class="overflow-hidden rounded-full aspect-square max-w-[250px] mx-auto mb-6 shadow-lg">
-                    <img src="https://picsum.photos/seed/hotel1/800/600" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" alt="Salón Principal">
+                    <img src="{{ asset('img/salon.png') }}" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" alt="Salón Principal">
                 </div>
                 <h3 class="font-serif text-xl text-primary-950 mb-2">El Salón Principal</h3>
                 <p class="text-primary-600 text-sm">Climatizado y con diseño contemporáneo inspirado en las raíces afrocolombianas.</p>
@@ -83,7 +83,7 @@
             <!-- Terraza -->
             <div class="text-center group transition-all duration-700 delay-200 transform" :class="appear ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'">
                 <div class="overflow-hidden rounded-full aspect-square max-w-[250px] mx-auto mb-6 shadow-lg">
-                    <img src="https://picsum.photos/seed/hotel2/800/600" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" alt="Terraza">
+                    <img src="{{ asset('img/suite.png') }}" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" alt="Terraza">
                 </div>
                 <h3 class="font-serif text-xl text-primary-950 mb-2">Terraza al Mar</h3>
                 <p class="text-primary-600 text-sm">Disfruta de la brisa marina y atardeceres inolvidables mientras cenas.</p>
@@ -91,7 +91,7 @@
             <!-- Bar -->
             <div class="text-center group transition-all duration-700 delay-300 transform" :class="appear ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'">
                 <div class="overflow-hidden rounded-full aspect-square max-w-[250px] mx-auto mb-6 shadow-lg">
-                    <img src="https://picsum.photos/seed/seafood1/800/600" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" alt="Bar">
+                    <img src="{{ asset('img/bar.png') }}" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" alt="Bar">
                 </div>
                 <h3 class="font-serif text-xl text-primary-950 mb-2">Bar de Autor</h3>
                 <p class="text-primary-600 text-sm">Coctelería exótica resaltando destilados autóctonos como el viche.</p>
@@ -111,7 +111,7 @@
                 <!-- Card 1 -->
                 <div class="group relative block rounded-xl overflow-hidden bg-white transition-all duration-700 delay-100 transform" :class="appear ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'">
                     <div class="flex-shrink-0 relative rounded-t-xl overflow-hidden w-full h-64 before:absolute before:inset-x-0 before:size-full before:bg-gradient-to-t before:from-primary-950/80 before:z-[1]">
-                        <img class="size-full absolute top-0 start-0 object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://picsum.photos/seed/seafood2/800/600" alt="Crudo de Pescado">
+                        <img class="size-full absolute top-0 start-0 object-cover transform group-hover:scale-105 transition-transform duration-500" src="{{ asset('img/mariscos.png') }}" alt="Crudo de Pescado">
                     </div>
                     <div class="absolute top-0 inset-x-0 z-10">
                         <div class="p-4 flex flex-col h-full sm:p-6">
@@ -129,7 +129,7 @@
                 <!-- Card 2 -->
                 <div class="group relative block rounded-xl overflow-hidden bg-white transition-all duration-700 delay-200 transform" :class="appear ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'">
                     <div class="flex-shrink-0 relative rounded-t-xl overflow-hidden w-full h-64 before:absolute before:inset-x-0 before:size-full before:bg-gradient-to-t before:from-primary-950/80 before:z-[1]">
-                        <img class="size-full absolute top-0 start-0 object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://picsum.photos/seed/hotel3/800/600" alt="Suite Ocean View">
+                        <img class="size-full absolute top-0 start-0 object-cover transform group-hover:scale-105 transition-transform duration-500" src="{{ asset('img/salon.png') }}" alt="Suite Ocean View">
                     </div>
                     <div class="absolute top-0 inset-x-0 z-10">
                         <div class="p-4 flex flex-col h-full sm:p-6">
@@ -147,7 +147,7 @@
                 <!-- Card 3 -->
                 <div class="group relative block rounded-xl overflow-hidden bg-white transition-all duration-700 delay-300 transform" :class="appear ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'">
                     <div class="flex-shrink-0 relative rounded-t-xl overflow-hidden w-full h-64 before:absolute before:inset-x-0 before:size-full before:bg-gradient-to-t before:from-primary-950/80 before:z-[1]">
-                        <img class="size-full absolute top-0 start-0 object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://picsum.photos/seed/seafood3/800/600" alt="Interior">
+                        <img class="size-full absolute top-0 start-0 object-cover transform group-hover:scale-105 transition-transform duration-500" src="{{ asset('img/suite.png') }}" alt="Interior">
                     </div>
                     <div class="absolute top-0 inset-x-0 z-10">
                         <div class="p-4 flex flex-col h-full sm:p-6">
@@ -182,7 +182,7 @@
                 "No buscamos alimentar estómagos, buscamos crear recuerdos que perduren en el alma junto al mar. Esa es nuestra promesa en cada plato que servimos en Buenaventura."
             </p>
             <div class="flex items-center justify-center gap-4">
-                <img class="w-16 h-16 rounded-full object-cover border-2 border-accent-500 shadow-lg" src="https://picsum.photos/seed/seafood4/800/600" alt="Chef">
+                <img class="w-16 h-16 rounded-full object-cover border-2 border-accent-500 shadow-lg" src="{{ asset('img/bar.png') }}" alt="Chef">
                 <div class="text-left">
                     <h4 class="text-lg font-bold text-primary-900">Alejandro Marín</h4>
                     <span class="text-sm text-primary-600">Chef Ejecutivo & Fundador</span>

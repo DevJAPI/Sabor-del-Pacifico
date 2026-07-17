@@ -1,10 +1,7 @@
-//
 import './bootstrap';
 import 'preline';
-import Alpine from 'alpinejs';
 import intersect from '@alpinejs/intersect';
 
-window.Alpine = Alpine;
-
-Alpine.plugin(intersect);
-Alpine.start();
+document.addEventListener('alpine:init', () => {
+    window.Alpine.plugin(intersect);
+});

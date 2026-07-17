@@ -16,12 +16,12 @@
 <body class="bg-primary-50 text-primary-950 antialiased font-sans flex flex-col min-h-screen">
     
     <!-- Navbar -->
-    <header class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md border-b border-primary-200/50 transition-all duration-300">
+    <header class="fixed w-full top-0 z-50 bg-primary-950/90 backdrop-blur-md border-b border-primary-800 transition-all duration-300">
         <nav class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 py-4">
             <div class="flex items-center justify-between">
-                <a class="flex-none text-2xl font-serif font-semibold text-primary-900 tracking-tight" href="/">Sabor del Pacífico</a>
+                <a class="flex-none text-2xl font-serif font-semibold text-white tracking-tight hover:text-accent-400 transition-colors" href="/">Sabor del Pacífico</a>
                 <div class="sm:hidden">
-                    <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-primary-200 bg-white text-primary-800 shadow-sm hover:bg-primary-50 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                    <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-primary-700 bg-primary-900 text-white shadow-sm hover:bg-primary-800 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
                         <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
                         <svg class="hs-collapse-open:block hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
                     </button>
@@ -29,11 +29,11 @@
             </div>
             <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
                 <div class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
-                    <a class="font-medium text-primary-600 hover:text-accent-500 sm:py-6" href="/">Inicio</a>
-                    <a class="font-medium text-primary-600 hover:text-accent-500 sm:py-6" href="/nosotros">Nuestra Esencia</a>
-                    <a class="font-medium text-primary-600 hover:text-accent-500 sm:py-6" href="/menu">Menú & Habitaciones</a>
-                    <a class="font-medium text-primary-600 hover:text-accent-500 sm:py-6" href="/galeria">Galería</a>
-                    <a class="flex items-center gap-x-2 font-medium text-white bg-primary-900 hover:bg-primary-800 transition-colors px-5 py-2.5 rounded-full" href="/reservas">
+                    <a class="font-medium text-primary-200 hover:text-white sm:py-6 transition-colors" href="/">Inicio</a>
+                    <a class="font-medium text-primary-200 hover:text-white sm:py-6 transition-colors" href="/nosotros">Nuestra Esencia</a>
+                    <a class="font-medium text-primary-200 hover:text-white sm:py-6 transition-colors" href="/menu">Menú & Habitaciones</a>
+                    <a class="font-medium text-primary-200 hover:text-white sm:py-6 transition-colors" href="/galeria">Galería</a>
+                    <a class="flex items-center gap-x-2 font-medium text-primary-950 bg-accent-500 hover:bg-accent-400 transition-colors px-5 py-2.5 rounded-full" href="/reservas">
                         Reservar
                     </a>
                 </div>

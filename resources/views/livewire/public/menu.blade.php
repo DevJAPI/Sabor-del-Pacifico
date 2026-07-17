@@ -232,7 +232,7 @@ title('Menú & Habitaciones | Sabor del Pacífico');
             <div x-show="tab === 'habitaciones'" style="display: none;" x-transition:enter="transition ease-out duration-500" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0" class="grid md:grid-cols-2 gap-8">
                 <!-- Room 1 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-primary-100 flex flex-col">
-                    <img src="https://picsum.photos/seed/hotel4/800/600" alt="Habitación Estándar" class="w-full h-64 object-cover">
+                    <img src="{{ asset('img/mariscos.png') }}" alt="Habitación Estándar" class="w-full h-64 object-cover">
                     <div class="p-8 flex flex-col flex-grow">
                         <h3 class="text-2xl font-serif text-primary-950 mb-2">Habitación Estándar</h3>
                         <p class="text-primary-600 mb-6 text-sm flex-grow">Ideal para parejas o viajeros de negocios. Diseño contemporáneo, cama Queen y baño privado con acabados en madera de la región.</p>
@@ -241,7 +241,7 @@ title('Menú & Habitaciones | Sabor del Pacífico');
                 </div>
                 <!-- Room 2 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-primary-100 flex flex-col">
-                    <img src="https://picsum.photos/seed/seafood5/800/600" alt="Suite Vista al Mar" class="w-full h-64 object-cover">
+                    <img src="{{ asset('img/salon.png') }}" alt="Suite Vista al Mar" class="w-full h-64 object-cover">
                     <div class="p-8 flex flex-col flex-grow">
                         <h3 class="text-2xl font-serif text-primary-950 mb-2">Suite Vista al Mar</h3>
                         <p class="text-primary-600 mb-6 text-sm flex-grow">Despierta con el sonido de las olas. Balcón privado, cama King y minibar con selección de bebidas del Pacífico.</p>
@@ -250,7 +250,7 @@ title('Menú & Habitaciones | Sabor del Pacífico');
                 </div>
                 <!-- Room 3 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-primary-100 flex flex-col">
-                    <img src="https://picsum.photos/seed/seafood6/800/600" alt="Master Suite" class="w-full h-64 object-cover">
+                    <img src="{{ asset('img/suite.png') }}" alt="Master Suite" class="w-full h-64 object-cover">
                     <div class="p-8 flex flex-col flex-grow">
                         <h3 class="text-2xl font-serif text-primary-950 mb-2">Master Suite Presidencial</h3>
                         <p class="text-primary-600 mb-6 text-sm flex-grow">Amplitud máxima con sala de estar separada. Incluye jacuzzi privado en terraza y servicio a la habitación incluido.</p>
@@ -259,7 +259,7 @@ title('Menú & Habitaciones | Sabor del Pacífico');
                 </div>
                 <!-- Room 4 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-primary-100 flex flex-col">
-                    <img src="https://picsum.photos/seed/seafood7/800/600" alt="Villa Privada" class="w-full h-64 object-cover">
+                    <img src="{{ asset('img/bar.png') }}" alt="Villa Privada" class="w-full h-64 object-cover">
                     <div class="p-8 flex flex-col flex-grow">
                         <h3 class="text-2xl font-serif text-primary-950 mb-2">Villa Privada Frente a la Playa</h3>
                         <p class="text-primary-600 mb-6 text-sm flex-grow">Un refugio exclusivo para grupos o familias. Dos pisos, piscina privada, mayordomo y acceso directo a la arena.</p>
